@@ -69,10 +69,12 @@
             </td>
             <td>
                 <a href="/courses/edit/${c.course_id}">Edit</a>
+                <a href="/students/by-course/${c.course_name}">
+                     View the details of students enrolled in this course (inner join - custom query)
+                </a>
             </td>
         </tr>
     </c:forEach>
 </table>
     </body>
 </html>
-

@@ -1,5 +1,4 @@
 package com.shreyasnitin.sga2.entity;
-
 import jakarta.persistence.*;
 import java.util.List;
 @Entity
@@ -12,7 +11,6 @@ public class Students {
     private String student_gender;
     private int student_age;
     private String student_email;
-
     @ManyToMany
     @JoinTable(
         name="Student_and_Courses",

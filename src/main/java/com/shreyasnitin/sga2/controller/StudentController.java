@@ -44,4 +44,9 @@ public class StudentController {
         model.addAttribute("courses", courseService.findAllCourses());
         return "updateStudent";
     }
+    @GetMapping("/students/by-course/{courseName}")
+    public String getStudentsByCourse(@PathVariable String courseName, Model model){
+    model.addAttribute("students", studentService.getStudentsByCourseName(courseName));
+    return "studentList";
+   }
 }
